@@ -1,0 +1,13 @@
+.navbar .login-btn {
+  position: absolute;
+
+  right: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .navbar .login-btn {
+
+    position:static ;
+    right: auto;
+
+  }
+}

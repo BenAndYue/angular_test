@@ -1,0 +1,87 @@
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: darkgrey;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+
+
+}
+
+/*logo links*/
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  border-left: 3px white solid;
+
+}
+
+.logoB {
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  color: white;
+}
+
+.sub-title {
+  font-size: 15px;
+  text-align: right;
+  margin-right: 300px;
+  color: snow;
+}
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 800px) {
+  .header a {
+
+    display: block;
+    text-align: left;
+  }
+
+  .sub-title {
+    text-align: center;
+    position: center;
+    margin-right: auto;
+
+  }
+
+  .logoB {
+    opacity: 0;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+.responsive {
+  max-width: 90%;
+  height: auto;
+  max-height: 100px;
+}
+
+
+

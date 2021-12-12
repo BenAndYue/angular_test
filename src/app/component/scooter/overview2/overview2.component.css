@@ -1,0 +1,59 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+  position: absolute;
+}
+
+.list {
+
+  margin-right: 15px;
+  font-size: 45px;
+  text-shadow: orangered;
+
+}
+
+#eventable {
+  border-collapse: collapse;
+  width: 25%;
+  font-family: sans-serif;
+}
+
+#eventable td, #eventable th {
+  border: 1px white;
+}
+
+#eventable tr:nth-child(even) {
+  background-color: white;
+}
+
+#eventable tr:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+
+tr:nth-child(even) {
+  background-color: #ffffff
+}
+
+
+#eventable th {
+  padding-top: 8px;
+  background-color: red;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+
+
+.btn {
+  background-color: #333;
+  float: right;
+  cursor: pointer;
+  color: whitesmoke;
+
+
+}
+

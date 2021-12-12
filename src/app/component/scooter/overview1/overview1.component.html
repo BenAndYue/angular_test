@@ -1,0 +1,28 @@
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Tag</th>
+      <th>Status</th>
+      <th>Location</th>
+      <th>Mileage</th>
+      <th>Battery charge</th>
+    </tr>
+
+    <tr *ngFor="let scoot of scooter">
+
+      <td>{{scoot.id}}</td>
+      <td>{{scoot.tag}}</td>
+      <td>{{scoot.status}}</td>
+      <td>{{scoot.gpsLocation}}</td>
+      <td>{{scoot.mileage}} Km</td>
+      <td>{{scoot.batteryCharger}} %</td>
+
+    </tr>
+
+
+  </table>
+  <button  (click)="AddBikeHandle()" class="float-right btn-primary">Add Bike
+  </button>
+</div>
+

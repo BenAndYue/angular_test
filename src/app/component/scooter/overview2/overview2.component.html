@@ -1,0 +1,35 @@
+
+<div style="overflow-x:auto;">
+
+
+
+  <div>
+
+   <app-detail2 [edit]="selected"></app-detail2>
+
+
+    <table id="eventable">
+      <tr>
+
+        <th>Tag</th>
+        <th>Status</th>
+
+      </tr>
+
+      <tr *ngFor="let scoot of scooter" (click)="select(scoot)">
+        <td>{{scoot.tag}}</td>
+        <td>{{scoot.status}}</td>
+      </tr>
+
+
+    </table>
+
+    <table>
+
+
+    </table>
+<!--    <button (click)="AddBikeHandle()" class="float-right btn-primary ">Add Bike-->
+<!--    </button>-->
+  </div>
+
+</div>

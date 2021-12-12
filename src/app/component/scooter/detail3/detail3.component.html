@@ -1,0 +1,55 @@
+<div class="Lijst" *ngIf="editedScootertId >= 0">
+
+  <table id="selectTable">
+    <tr>
+    <tr>
+      <th>The selected scooter details form id: {{editedScootertId}}</th>
+    </tr>
+  </table>
+
+  <table id="tabelScooterDetail">
+
+    <tr>
+      <td>Id</td>
+      <td><input type="text" name="id" required [(ngModel)]="editedScooter3.id"></td>
+    </tr>
+
+    <tr>
+      <td>Tag</td>
+      <td><input type="text" name="tag" required [(ngModel)]="editedScooter3.tag"></td>
+    </tr>
+
+    <tr>
+      <td>Battery %</td>
+      <td><input type="text" name="batteryCharge" required [(ngModel)]="editedScooter3.batteryCharger"></td>
+    </tr>
+
+    <tr>
+      <td>Status</td>
+      <td><select type="text" name="status" class="custom-select" [(ngModel)]="editedScooter3.status">
+
+        <option value="IDLE">IDLE</option>
+        <option value="INUSE">INUSE</option>
+        <option value="MAINTENANCE">MAINTENANCE</option>
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Mileage</td>
+      <td><input type="text" name="mileage" required [(ngModel)]="editedScooter3.mileage"></td>
+    </tr>
+
+    <tr>
+      <td>GPS-Location</td>
+      <td><input type="text" name="gpsLocation" required [(ngModel)]="editedScooter3.gpsLocation"></td>
+    </tr>
+  </table>
+  <button (click)="cancelClick()" class="btn btn-primary">Cancel&nbsp;</button>
+  <button (click)="clickReset()" [disabled]="niksVeranderd()" class="btn btn-secondary">Reset&nbsp;</button>
+  <button (click)="clickClear()" class="btn btn-secondary">Clear&nbsp;</button>
+  <button (click)="clickSave()" [disabled]="niksVeranderd()" class="btn btn-primary">Save&nbsp;</button>
+  <button (click)="clickDeleter()" [disabled]="!niksVeranderd()" class="btn btn-danger">Delete&nbsp;</button>
+
+
+</div>

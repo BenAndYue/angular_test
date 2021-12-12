@@ -1,0 +1,32 @@
+<div class="liste1">
+
+  <app-detail3 [editedScooterId]="gekozenIndex"></app-detail3>
+
+  <h2> List of scooters</h2>
+  Click on of the scooter tag to show the edit form. <br> <br>
+
+
+  <table id="titelEventTabel">
+    <tr>
+      <th>Scooter id</th>
+      <th>Tag</th>
+
+
+    </tr>
+
+    <tr *ngFor="let scoot of scooterService.scooter; let scootIndex = index">
+      <td>{{scoot.id}}</td>
+      <td class="{{scootIndex == gekozenIndex? 'selected' : ''}}"
+          (click)="onSelect(scootIndex)">{{scoot.tag}}</td>
+    </tr>
+
+  </table>
+
+  <!-- TODO zaka-->
+  <!--  Click handle werkt maar clickHandle methode werkt niet-->
+
+  <button (click)="(clickHandle())" class="btnAdd">Add Scooter</button>
+
+
+</div>
+

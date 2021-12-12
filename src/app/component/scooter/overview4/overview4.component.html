@@ -1,0 +1,35 @@
+<div class="liste1">
+
+  <router-outlet></router-outlet>
+
+  <h2> List of scooters</h2>
+  Click on of the scooter tag to show the edit form. <br> <br>
+
+
+  <table id="titelEventTabel">
+    <tr>
+      <th>Scooter id</th>
+      <th>Tag</th>
+
+
+    </tr>
+
+    <tr *ngFor="let scoot of scooterService.scooter; let scootIndex = index">
+<!--     Tag for scootet id-->
+      <td>{{scoot.id}}</td>
+
+      <td class="{{scootIndex == selected? 'selected' : ''}}"
+          (click)="onselect(scootIndex)">{{scoot.tag}}</td>
+    </tr>
+
+  </table>
+
+  <!-- TODO zaka-->
+  <!--  Click handle werkt maar clickHandle methode werkt niet-->
+
+  <button (click)="(clickHandle())" class="btn btn-info">Add Scooter</button>
+
+
+</div>
+
+
